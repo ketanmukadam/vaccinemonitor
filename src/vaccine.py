@@ -36,7 +36,7 @@ def main():
     nlevel = getattr(logging, loglevel.upper(), None)
     if not isinstance(nlevel, int):
             raise ValueError('Invalid log level: %s' % loglevel)
-    logging.basicConfig(filename='err.log', level=nlevel, 
+    logging.basicConfig(filename='vacinfo.log', filemode="w", level=nlevel, 
             format='%(asctime)s %(levelname)s:%(message)s')
     parse_arguments()
     numdays = 7 

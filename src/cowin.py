@@ -111,6 +111,7 @@ def show_vacc(dist_id, numdays):
                      body = body + pv1[['name', 'block_name', 'date', 'fee_type', 'vaccine',
                                'available_capacity_dose1', 'min_age_limit']].to_string(index=False)
                      logging.debug(body)
+                     print ("Found Paid dose")
         else : 
             logging.error("Error in fetching")
             print("Err in fetching")
